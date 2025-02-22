@@ -1,0 +1,34 @@
+{
+  "student": [
+    {
+      "id": "1",
+      "rollno": 1,
+      "name": "raj",
+      "fees": 5000
+    },
+    {
+      "id": "2",
+      "rollno": 2,
+      "name": "Abhiraj",
+      "fees": 50300
+    },
+    {
+      "id": "3",
+      "rollno": 3,
+      "name": "ajay",
+      "fees": 50300
+    },
+    {
+      "id": "0160",
+      "name": "xzs",
+      "rollno": "fsd",
+      "fees": "fedf"
+    },
+    {
+      "id": "d92e",
+      "rollno": "rrt",
+      "name": "yum",
+      "fees": "j"
+    }
+  ]
+}
