@@ -22,10 +22,10 @@ const ans=mydata.map((key)=>{
   return(
     <>
     <tr>
-      <td>{key.rollno}</td>
+      <td>{key.empno}</td>
       <td>{key.name}</td>
-      <td>{key.fees}</td>
-
+      <td>{key.designation}</td>
+      <td>{key.salary}</td>
     </tr>
     </>
   )
@@ -36,12 +36,16 @@ const ans=mydata.map((key)=>{
         <h1>this is display</h1>
 
 
-        <table width="500" bgcolor="red">
+        <table width="500"  border="2px solid red" bgcolor="red">
+        <tr>
           <th>roll</th>
           <th>name</th>
-          <th>fees</th>
-        </table>
+          <th>designation</th>
+          <th>salary</th>
+        </tr>
         {ans}
+
+        </table>
         </>
       )
     }

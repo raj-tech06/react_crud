@@ -17,26 +17,39 @@ const Insert=()=>{
 
 
 
-  const handleSubmit=()=>{
-    let api="http://localhost:3000/student";
-    axios.post(api,input).then((res)=>{
-        alert("data save succesfully");
-    })
+  // const handleSubmit=()=>{
+  //   let api="http://localhost:3000/student";
+  //   axios.post(api,input).then((res)=>{
+  //       alert("data save succesfully");
+  //   })
+  //  console.log(input);
+  // }
 
+
+  const handleSubmit=async()=>{
+    let api="http://localhost:3000/student";
+  
+    const response= await axios.post(api,input);
+    alert("data save")
+    console.log(response);
 
     console.log(input);
   }
   return( 
     <>
    <h1>Application Form</h1>
-   Enter roll  <input type="text" name="rollno" 
+   Enter Empno  <input type="text" name="empno" 
    onChange={Submit}/>
    <br />
    Enter name  <input type="text" name="name" 
    onChange={Submit}/>
    <br />
 
-    Enter city  <input type="text" name="fees" 
+
+   Enter designation  <input type="text" name="designation" 
+   onChange={Submit}/>
+   <br />
+    Enter salary  <input type="text" name="salary" 
    onChange={Submit}/>
    <br />
 
