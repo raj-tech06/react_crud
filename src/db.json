@@ -1,45 +1,10 @@
 {
   "student": [
     {
-      "id": "1",
-      "empno": 1,
-      "name": "raj",
-      "designation": "doctor",
-      "salary": 65858
-    },
-    {
-      "id": "1",
-      "empno": 100,
-      "name": "raj",
-      "designation": "doctor",
-      "salary": 65858
-    },
-    {
-      "id": "1",
-      "empno": 101,
-      "name": "raj",
-      "designation": "doctor",
-      "salary": 65858
-    },
-    {
-      "id": "1",
-      "empno": 102,
-      "name": "raj",
-      "designation": "doctor",
-      "salary": 65858
-    },
-    {
-      "id": "1",
-      "empno": 103,
-      "name": "raj",
-      "designation": "doctor",
-      "salary": 65858
-    },
-    {
-      "id": "c305",
-      "empno": 104,
-      "name": "e3w",
-      "designation": "e",
+      "id": "0124",
+      "empno": "999",
+      "name": "Abhishek Sahu",
+      "designation": "developer",
       "salary": "789789"
     },
     {

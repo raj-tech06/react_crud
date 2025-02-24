@@ -5,6 +5,7 @@ import { useState , useEffect } from "react";
 
 
 const Display=()=>{
+  
 const [mydata, setMydata]= useState([]);
 const loadData=async()=>{
   let api="http://localhost:3000/student";
