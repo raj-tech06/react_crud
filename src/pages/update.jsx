@@ -14,12 +14,12 @@ const [mydata, setMydata]= useState([]);
 
 
 
-const loadData=async()=>{
-  let api="http://localhost:3000/student";
-  const response=await axios.get(api);
-  console.log(response.data);
-  setMydata(response.data);
- }
+// const loadData=async()=>{
+//   let api="http://localhost:3000/student";
+//   const response=await axios.get(api);
+//   console.log(response.data);
+//   setMydata(response.data);
+//  }
 
 
 useEffect(()=>{
