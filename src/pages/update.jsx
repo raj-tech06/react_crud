@@ -1,6 +1,7 @@
 
 import axios from "axios";
 import { useState , useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 import editimg from "../img/edit.png";
 import delimg from "../img/delete.png";
@@ -9,7 +10,7 @@ const Update=()=>{
   
 const [mydata, setMydata]= useState([]);
 
-
+const navigate=useNavigate();
 
 
 
@@ -30,12 +31,12 @@ const mydel=async(id)=>{
 const api=`http://localhost:3000/student/${id}`
  await axios.delete(api);
 loadData();
-  alert("edit");
+  alert("delete");
 }
 
 const myedit=(id)=>{
- 
-
+ navigate(`/editdata/${id}`);
+ alert(id);
 }
 
 
@@ -50,18 +51,21 @@ const myedit=(id)=>{
 const ans=mydata.map((key)=>{
   return(
     <>
+   
     <tr>
       <td>{key.empno}</td>
       <td>{key.name}</td>
       <td>{key.designation}</td>
       <td>{key.salary}</td>
       <td>
-      <img src={editimg} width="20" height="20" onClick={()=>{myedit(key.id)}} />
-
+      <a href="#" onClick={()=>{myedit(key.id)}} >
+      <img src={editimg} width="20" height="20" />
+      </a>
       </td>
       <td>
-      <img src={delimg} width="20" height="20" onClick={()=>{mydel(key.id)}} />
-
+      <a href="#">
+      <img src={delimg} width="20" height="20"  onClick={()=>{mydel(key.id)}} />
+      </a>
       </td>
     </tr>
     </>
